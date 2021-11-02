@@ -1,0 +1,30 @@
+/* load local font in current location */
+
+/* pacificoregular */
+@font-face {
+  font-family: 'pacificoregular';
+  src: url('../font/pacifico-regular-webfont.woff2') format('woff2'),
+       url('../font/pacifico-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* comfortaaregular */
+@font-face {
+  font-family: 'comfortaaregular';
+  src: url('../font/comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
+       url('../font/comfortaa-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset all element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em 'comfortaaregular';
+}
