@@ -18,6 +18,15 @@
   font-style: normal;
 }
 
+/* all animation define here */
+@keyframes upToDown {
+  0% {
+    transform: translateY(0rem);
+  } 100% {
+    transform: translateY(-1rem);
+  }
+}
+
 /* reset all element */
 * {
   margin: 0;
@@ -47,6 +56,15 @@ header {
 header > h1 {
   line-height: 7rem;
   margin-bottom: 50px;
+}
+
+header > h3 {
+  cursor: pointer;
+  animation-name: upToDown;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 /* end of header */
