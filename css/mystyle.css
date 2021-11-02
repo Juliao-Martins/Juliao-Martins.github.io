@@ -121,7 +121,13 @@ form > fieldset {
   width: 50%;
   margin: 10px;
   padding: 5px;
+  border: 1px solid black;
   border-radius: 7px;
+}
+
+form > fieldset > legend {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 20%);
 }
 
 form > fieldset > textarea {
@@ -130,6 +136,11 @@ form > fieldset > textarea {
   resize: none;
   border-radius: inherit;
   font-size: 1.3rem;
+}
+
+form > fieldset > textarea::selection {
+  background-color: orange;
+  color: white;
 }
 
 /* end of form */
