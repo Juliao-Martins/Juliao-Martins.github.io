@@ -32,12 +32,12 @@ window.setInterval(() => {
       const textarea = document.querySelectorAll('textarea');
 
       // check if object keys return undefined
-      if(y[`${textarea[0].value}`] === undefined) {
+      if(y[`${textarea[0].value.toLocaleLowerCase()}`] === undefined) {
         // if condition return true, textarea value of content is empty
         textarea[1].value = "";
       } else {
         // else return false, textarea value content is return for object value
-        textarea[1].value = y[`${textarea[0].value}`];
+        textarea[1].value = y[`${textarea[0].value.toLocaleLowerCase()}`];
       }
 
     });
