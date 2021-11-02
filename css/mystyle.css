@@ -27,11 +27,25 @@
   }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 100%;
+    transform: translateX(0rem);
+  } 100% {
+    opacity: 0%;
+    transform: translateX(-2rem);
+  }
+}
+
 /* reset all element */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -67,4 +81,52 @@ header > h3 {
   animation-timing-function: linear;
 }
 
+header > h3 > a {
+  text-decoration: none;
+  color: white;
+}
+
 /* end of header */
+
+/* section with class="info" */
+section.info {
+  width: 50%;
+  margin: 160px auto 50px;
+  border-left: 5px solid orange;
+  padding-left: 1rem;
+  animation: fade 10s ease-in-out 0s infinite alternate-reverse forwards;
+}
+
+section.info > hr {
+  width: 45%;
+  height: 0.2rem;
+  background-color: black;
+  margin-bottom: 1.4rem;
+}
+
+/* end of section */
+
+/* form */
+form {
+  width: 80%;
+  margin: 150px auto;
+  padding: 10px;
+  display: flex;
+}
+
+form > fieldset {
+  width: 50%;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+form > fieldset > textarea {
+  width: 100%;
+  padding: 8px 12px;
+  resize: none;
+  border-radius: inherit;
+  font-size: 1.3rem;
+}
+
+/* end of form */
