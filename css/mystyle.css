@@ -104,6 +104,7 @@ section.info > hr {
   margin-bottom: 1.4rem;
 }
 
+
 /* end of section */
 
 /* form */
@@ -112,6 +113,8 @@ form {
   margin: 150px auto;
   padding: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form > fieldset {
@@ -161,3 +164,34 @@ footer a:active {
   color: black;
 }
 /* end of footer */
+
+
+/* for screen 500px or less set this style */
+@media only screen and (max-width: 500px) {
+  /* header */
+  header {
+    font-size: 1.4rem;
+  }
+
+  header > h1 {
+    line-height: 5rem;
+  }
+  /* end of header */
+
+  /* section with class="info" */
+  section.info {
+    width: 80%;
+  }
+  /* end of section */
+
+  /* form */
+  form {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  form > fieldset {
+    width: 100%;
+  }
+  /* end of form */
+}
