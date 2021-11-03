@@ -97,6 +97,16 @@ section.info > hr {
   margin-bottom: 1.4rem;
 }
 
+section.info > p > a:link,
+section.info > p > a:visited {
+  color: orange;
+  text-decoration: none;
+}
+
+section.info > p > a:hover,
+section.info > p > a:active{
+  text-decoration: underline;
+}
 
 /* end of section */
 
