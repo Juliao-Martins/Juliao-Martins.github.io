@@ -7,6 +7,32 @@ const caption = {
   second: "Ami nia projetu ida nee <b><i>Open Source</i></b>, karik kolega sira iha interese atu dezenvolve diak liu tan bele foti ami nia <b>Source Code</b> iha <a href='https://github.com/Juliao-Martins/Juliao-Martins.github.io' target='_blank'>GitHub</a>. Ami iha esperansa wainhira serbisu ida nee ida kolabora ho ema barak."
 }
 
+// catch an HTML element with class="hamburger"
+const hamburger = document.getElementsByClassName("hamburger")[0];
+// catch an HTML element with parent nav and child ul
+const list = document.querySelector("nav>ul");
+
+// adding event click for hamburger
+hamburger.addEventListener('click', () => {
+  list.classList.toggle('show-hamburger');
+  // and change the hamburger background-color
+  const hambSpan = document.querySelector(".hamburger>span");
+  for(let i = 0; i < hamburger.children.length; ++i) {
+    hamburger.children[i].classList.toggle('old-color');
+    console.log("ok!");
+  }
+});
+
+// catch an HTML element with class="container-profile" and class="my-photo"
+const containerProfile = document.getElementsByClassName("container-profile")[0],
+myPhoto = document.querySelectorAll('.my-photo');
+
+for(let i = 0; i < myPhoto.length; ++i) {
+  myPhoto[i].addEventListener('click', () => {
+    containerProfile.classList.toggle('show-container-profile');
+  })
+}
+
 // declartion variable i
 let i = 0;
 
