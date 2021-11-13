@@ -23,6 +23,16 @@ hamburger.addEventListener('click', () => {
   }
 });
 
+// catch an HTML element with class="container-profile" and class="my-photo"
+const containerProfile = document.getElementsByClassName("container-profile")[0],
+myPhoto = document.querySelectorAll('.my-photo');
+
+for(let i = 0; i < myPhoto.length; ++i) {
+  myPhoto[i].addEventListener('click', () => {
+    containerProfile.classList.toggle('show-container-profile');
+  })
+}
+
 // declartion variable i
 let i = 0;
 
