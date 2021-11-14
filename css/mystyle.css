@@ -316,6 +316,7 @@ footer a:active {
   background-size: cover;
   animation-name: toUp;
   animation-duration: 3s;
+  position: relative;
 }
 
 .my-profile > h4,
@@ -343,6 +344,21 @@ footer a:active {
 
 .my-photo {
   cursor: pointer;
+}
+
+.close-my-profile {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: white;
+  color: black;
+  padding: .2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -8px;
 }
 /* end of container-profile */
 
